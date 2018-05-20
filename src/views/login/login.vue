@@ -71,8 +71,16 @@ export default {
     }
   },
   mounted () {
-    this.identifyCode = ''
-    this.makeCode(this.identifyCodes, 4)
+    if (this.$cookie.get('userName')) {
+      this.$message({
+        type: 'success',
+        message: `检测到您的账号${this.$cookie.get('userName')},自动为您登陆`
+      })
+      this.$router.push('/pages')
+    } else {
+      this.identifyCode = ''
+      this.makeCode(this.identifyCodes, 4)
+    }
   },
   methods: {
     randomNum (min, max) {
@@ -93,8 +101,14 @@ export default {
         if (valid) {
           this.$message({
             type: 'success',
-            message: '登录成功'
+            message: '登录成功',
+            showClose: true
           })
+          if (this.checked) {
+            this.$cookie.set('userName', this.form.name, 30)
+          } else {
+            this.$cookie.set('userName', this.form.name)
+          }
           this.$router.push('/pages')
         } else {
           this.$message({

@@ -16,7 +16,7 @@
            <li>主页</li>
            <li>修改密码</li>
            <li>锁定</li>
-           <li>注销</li>
+           <li @click="$cookie.set('userName', '', -1);$router.push('/xxx')">注销</li>
            <li>技术支持</li>
            <li>公告</li>
            <li>帮助</li>
@@ -43,7 +43,7 @@ export default {
   methods: {
     initData () {
       this.version = 'Ver4.01'
-      this.name = '李小青'
+      this.name = this.$cookie.get('userName') ? this.$cookie.get('userName') : '您还未登录哦'
       this.num = 8
     },
     go (i) {
