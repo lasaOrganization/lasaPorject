@@ -26,6 +26,12 @@ export default {
 li{
     writing-mode: tb-rl;
     background-color: #66CCCC;
-    border-radius: 5px 0 0 5px;
+    border-radius: 8px 0 0 8px;
+    height: 120px;
+    padding: 0 5px;
+    letter-spacing: 5px;
+}
+li i{
+    padding-bottom: 5px;
 }
 </style>

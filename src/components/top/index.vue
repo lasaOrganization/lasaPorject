@@ -90,7 +90,7 @@ export default {
   margin-left: 10%;
   width: 70%;
   height: 40%;
-  margin-top: 10px;
+  margin-top: 10px; 
 }
 .nav_down>ul{
   display: flex;
@@ -101,6 +101,7 @@ export default {
   border-radius: 10px;
   justify-content: space-around;
   cursor: pointer;
+  padding-top: 0.5%;
 }
 .icon{
   font-size: 1.3rem;
