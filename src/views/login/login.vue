@@ -74,7 +74,8 @@ export default {
     if (this.$cookie.get('userName')) {
       this.$message({
         type: 'success',
-        message: `检测到您的账号${this.$cookie.get('userName')},自动为您登陆`
+        message: `检测到您的账号${this.$cookie.get('userName')},自动为您登陆`,
+        showClose: true
       })
       this.$router.push('/pages')
     } else {
@@ -113,7 +114,8 @@ export default {
         } else {
           this.$message({
             type: 'warning',
-            message: '请先确保您填的信息符合条件'
+            message: '请先确保您填的信息符合条件',
+            showClose: true
           })
           return false
         }

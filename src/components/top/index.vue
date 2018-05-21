@@ -1,6 +1,6 @@
 <template>
 <div class="top">
-    <img src="../../../static/img/topLeft.png" alt="" class="img"/>
+    <img src="../../../static/img/logo_xz.png" alt="" class="img"/>
     <div class="info"><span>版本:{{version}}</span><span><i class="icon iconfont icon-portrait"></i>欢迎您:{{name}}[当前在线人数{{num}}人]</span></div>
     <div class="nav">
       <ul class="nav_top">
@@ -64,10 +64,10 @@ export default {
 }
 .img{
   border:0;vertical-align: top;
-  width: 30%;
+  width: 35%;
 }
 .info{
-  width: 30%;
+  width: 25%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -90,7 +90,6 @@ export default {
   margin-left: 10%;
   width: 70%;
   height: 40%;
-  margin-top: 10px; 
 }
 .nav_down>ul{
   display: flex;
