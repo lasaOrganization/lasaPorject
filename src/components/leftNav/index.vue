@@ -14,7 +14,7 @@
 export default {
   data () {
     return {
-      currents: ['current', '', '', '', ''],
+      currents: ['', '', '', '', ''],
       navArr: ['/pages/user', '/pages/terminal', '/pages/powerArea', '/pages/group', '/pages/managerArea']
     }
   },
@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .leftNav{
-    width:30px;
+    width:100%;
     word-wrap: break-word
 }
 li{
@@ -43,6 +43,7 @@ li{
     padding: 0 5px;
     letter-spacing: 5px;
     cursor: pointer;
+    text-align: center;
 }
 li i{
     padding-bottom: 5px;

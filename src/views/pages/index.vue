@@ -2,17 +2,15 @@
 <div>
     <top></top>
     <router-view name="nav"></router-view>
-    <div>
-    <el-row>
-      <el-col :span="2">
-        <leftNav></leftNav>
-      </el-col>
-      <el-col :span="22">
-        <router-view></router-view>
-      </el-col>
-    </el-row>
-    <bottom></bottom>
+    <div class="box">
+        <div class="box_left">
+          <leftNav></leftNav>
+        </div>
+        <div class="box_right">
+          <router-view></router-view>
+        </div>
     </div>
+    <bottom></bottom>
 </div>
 </template>
 
@@ -29,4 +27,7 @@ export default {
 </script>
 
 <style scoped>
+.box{
+  display: flex;
+}
 </style>

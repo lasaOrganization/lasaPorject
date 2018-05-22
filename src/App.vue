@@ -47,4 +47,37 @@ body{
     padding-left: 0!important;
   }
 }
+::-webkit-scrollbar{
+    background-color: #F5F5F5;
+}
+// ::-webkit-scrollbar-track
+// {
+//     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//     border-radius: 10px;
+//   background-color: #009A99!important;
+// }
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#009A99;
+}
+
+
+// 被选中节点的颜色
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+    background-color: #F5E4B4;
+}
+
+.el-table th.is-leaf{
+  text-align: center;
+  background-color: #1CAFAE;
+  color: white;
+}
+// 自定义斑马纹
+.el-table__row .el-table__row--striped{
+  background-color: #F5FFFE;
+}
+
 </style>
